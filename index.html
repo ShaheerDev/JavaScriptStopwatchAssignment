@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+  
+  <center><h1>Stopwatch Assignment</h1></center>
+
+  <div id="stopwatch-box" style="position: relative;">
+    <span style="position: relative;" id="hrs">00</span>
+    <span>:</span>
+    <span style="position: relative;" id="min">00</span>
+    <span>:</span>
+    <span style="position: relative;" id="sec">00</span>
+    <span>:</span>
+    <span style="position: relative;" id="msec">00</span>
+</div>
+
+  <div id="controls">
+    <button class="btn-xlarge" id="startbtn" onclick="start(); disable()">Start</button>
+    <button class="btn-xlarge" id="pausebtn" onclick="pause(); enable()">Pause</button>
+    <button class="btn-xlarge" onclick="reset()">Reset</button>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
